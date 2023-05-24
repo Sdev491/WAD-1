@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate using JS</title>
+</head>
+
+<body>
+    <form id="myform">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+
+        <label for="lastname">Lastname</label>:</label>
+        <input type="text" name="lastname" id="lastname">
+        <br>
+
+        <label for="password">Passowrd:</label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myform').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get the input field values
+            let firstname = document.getElementById('name').value;
+            let lastname = document.getElementById('lastname').value;
+            let pass = document.getElementById('password').value;
+            let email = document.getElementById('email').value;
+
+            // Validate First Name
+            if (firstname.length < 6) {
+                alert('First Name should be at least 6 characters long.');
+                return false; // Prevent form submission
+            }
+
+            // Validate Password
+            if (pass.length < 6) {
+                alert('Password should be at least 6 characters long.');
+                return false; // Prevent form submission
+            }
+
+            // Validate Email
+            let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!email.match(emailRegex)) {
+                alert('Invalid Email address.');
+                return false; // Prevent form submission
+            }
+
+            // Validate Last Name and Address
+            if (lastname.trim() === '') {
+                alert('Last Name should not be empty.');
+                return false; // Prevent form submission
+            }
+
+            console.log("firstname: " + firstname);
+            console.log("lastname: " + lastname);
+            console.log("pass: " + pass);
+            console.log("email: " + email);
+
+            // Continue form submission if all validations pass
+            return true;
+        })
+    </script>
+</body>
+
+</html>
