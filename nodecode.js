@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-//create index.html with this js file ....nhitr khi disnr nhi 
+//create index.html with this js file ....
 app.get("/",function(req,res){
   res.sendFile(__dirname + "/index.html");
 });
