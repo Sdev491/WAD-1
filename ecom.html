@@ -4,67 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="ecom.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h1 class="text-center">Ecommerce Admin</h1>
-            <ul class="nav">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Reports</a></li>
-            </ul>
-        </div>
-        <div class="main-content">
-            <h1 class="text-center">Dashboard</h1>
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Orders</h2>
-                        <p class="card-text">10,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Products</h2>
-                        <p class="card-text">1,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Customers</h2>
-                        <p class="card-text">5,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Revenue</h2>
-                        <p class="card-text">$500,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Profit</h2>
-                        <p class="card-text">$50,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">New Orders</h2>
-                        <p class="card-text">1,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">New Products</h2>
-                        <p class="card-text">100</p>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h1 class="text-center">Ecommerce Admin</h1>
+                <ul class="list-unstyled">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-</body>
-</html>
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <h1 class="text-center">Dashboard</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Orders</h5>
+                                <p class="card-text">10,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Products</h5>
+                                <p class="card-text">1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Customers</h5>
+                                <p class="card-text">5,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Revenue</h5>
+                                <p class="card-text">$500,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Profit</h5>
+                                <p class="card-text">$50,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">New Orders</h5>
+                                <p class="card-text">1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">New Products</h5>
+                                <p class="card-text">100</p>
+                            </div

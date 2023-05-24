@@ -1,41 +1,106 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+/* Custom CSS */
 
-.container {
-    display: flex;
-}
-
+/* Sidebar */
 .sidebar {
-    background-color: #f8f9fa;
-    width: 250px;
-    padding: 20px;
+    background-color: #27293d;
+    color: #fff;
+    height: 100vh;
+    padding: 50px 10px;
 }
 
 .sidebar h1 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.sidebar ul {
+    margin-bottom: 50px;
+}
+
+.sidebar ul li {
     margin-bottom: 20px;
 }
 
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav li {
-    margin-bottom: 10px;
-}
-
-.nav a {
+.sidebar ul li a {
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
 }
 
-.main-content {
-    padding:auto
+.sidebar ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Main Content */
+.row {
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.bg-primary {
+    background-color: #5e72e4 !important;
+}
+
+.bg-primary:hover {
+    background-color: #324cdd !important;
+}
+
+.bg-success {
+    background-color: #2dce89 !important;
+}
+
+.bg-success:hover {
+    background-color: #1a9b63 !important;
+}
+
+.bg-warning {
+    background-color: #fca311 !important;
+}
+
+.bg-warning:hover {
+    background-color: #e67e22 !important;
+}
+
+.bg-info {
+    background-color: #11cdef !important;
+}
+
+.bg-info:hover {
+    background-color: #0d6efd !important;
+}
+
+.bg-danger {
+    background-color: #f5365c !important;
+}
+
+.bg-danger:hover {
+    background-color: #d31e46 !important;
+}
+
+.bg-light {
+    background-color: #f1f1f1 !important;
+}
+
+.bg-light:hover {
+    background-color: #e8e8e8 !important;
 }
