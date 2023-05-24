@@ -76,3 +76,20 @@
 </body>
 
 </html>
+
+/* 
+FOR REFRENCE
+var usernamePattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      var passwordPattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;*/
+
+
+if (firstName.length < 6 || !/^[a-zA-Z]+$/.test(firstName)) {
+        alert("First Name should contain alphabets only and have a minimum length of 6 characters.");
+        return false;
+      }
+var mobilePattern = /^\d{10}$/;
+      if (!mobilePattern.test(mobileNumber)) {
+        alert("Mobile Number should contain 10 digits only.");
+        return false;
+      }
+                        */
