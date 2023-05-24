@@ -6,7 +6,8 @@ app.get("/",function(req,res){
 });
 
 
-//optional step...not needed
+//----------------------------------------------------------------------------------------------------------------------------------
+//optional steps...not needed
 app.get("/contact",function(req,res){
   res.send("Contact me -_-");
 });
@@ -18,3 +19,21 @@ app.get("/about",function(req,res){
 app.listen(3000,function(){
   console.log("server started on port 3000");
 });
+
+
+
+//Regex 4 Alphanumeric & nos.
+/*function lettersNumbersCheck(name)
+{
+   var regEx = /^[0-9a-zA-Z]+$/;
+   if(name.value.match(regEx))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Please enter letters and numbers only.");
+     return false;
+     }
+}  
+*/
