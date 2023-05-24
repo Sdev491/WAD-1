@@ -5,6 +5,8 @@ app.get("/",function(req,res){
   res.sendFile(__dirname + "/index.html");
 });
 
+
+//optional step...not needed
 app.get("/contact",function(req,res){
   res.send("Contact me -_-");
 });
